@@ -90,3 +90,8 @@ production:
   username: PracticalDeveloper
   pool: <%= ENV['DATABASE_POOL_SIZE'] %>
   password: <%= ENV['PRACTICALDEVELOPER_DATABASE_PASSWORD'] %>
+
+local_production:
+  <<: *default
+  url: <%= ENV.fetch('DATABASE_URL', '') %>
+  database: PracticalDeveloper_development
