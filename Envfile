@@ -151,4 +151,5 @@ variable :SMARTY_STREETS_WEB_KEY, :String, default: "Optional"
 
 group :production do
   variable :SECRET_KEY_BASE, :String
+  variable :SKYLIGHT_AUTHENTICATION, :String
 end
